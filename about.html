@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Castle & Retail Welcome</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    .hero-image {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .tagline {
+      font-style: italic;
+      margin: 10px 0;
+    }
+    .welcome-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+    .welcome-title span {
+      color: #3f4ca6;
+    }
+    .divider {
+      width: 50px;
+      height: 2px;
+      background: #ccc;
+      margin: 10px auto 20px;
+    }
+    .description {
+      text-align: justify;
+      line-height: 1.6;
+      font-size: 15px;
+      padding: 0 10px;
+    }
+    .shop-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 30px;
+      background: #3f4ca6;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .shop-btn:hover {
+      background: #2d3a8c;
+    }
+     footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+ <body>
+<body>
+ <header>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+     <div class="luxury-logo">Daraé Place</div>
+    <div class="icons">
+
+      <span class="cart">🛍️<span class="count">0</span></span>
+
+      <span class="search">🔍</span>
+
+    </div>
+
+  </header>
+
+<nav id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="category.html">Category</a>
+  </nav>
+  </header>
+  <div class="container">
+   
+    
+
+    <p class="welcome-title">WELCOME TO <span>DARAÉ PLACE</span> </p>
+    <div class="divider"></div>
+
+    <p class="description">
+      
+
+<p>
+  <strong>Daraé Place</strong> is a refined fashion house, offering exquisitely handcrafted 
+  <strong>crochet garments</strong> and <strong>premium leather slippers</strong>. 
+  Rooted in elegance and artisan quality, each piece embodies sophistication, comfort, and timeless beauty. <br>
+  <strong>Daraé Place</strong> is where craftsmanship meets couture for the woman who embraces luxury in every step and stitch.
+</p>
+   
+      
+<p>
+  <strong>Daraé Place</strong> is a modern fashion and lifestyle brand that celebrates <strong>bold style</strong>, <strong>comfort</strong>, and <strong>creativity</strong>. From <strong>handcrafted slippers</strong> and <strong>trendy bags</strong> to <strong>stylish accessories</strong>, <strong>Daraé Place</strong> offers unique pieces designed to make you feel confident and chic whether you're dressing up for a special event or keeping it casual. We blend <strong>tradition</strong> with <strong>trend</strong>, making every product a statement of <strong>elegance</strong> and <strong>individuality</strong>.
+</p>
+
+    <a href="all.html" class="shop-btn">Shop Now</a>
+  </div>
+
+
+   <footer class="site-footer">
+  <div class="footer-social">
+    <p>FOLLOW </p>
+    <a href="#"><img src="twitter-icon.png" alt="Twitter" /></a>
+    <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
+  </div>
+
+  <div class="footer-info">
+    <h4>INFO</h4>
+    <ul>
+      <li><a href="all.html">Ready To Wear</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="about.html">About Us</a></li>
+    
+      <li><a href="privacy.html">Privacy Policy</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-subscribe">
+    <h4>STAY UPDATED!</h4>
+    <p>Subscribe to get promotions, new products and sales updates directly to your inbox.</p>
+   <form onsubmit="showThankYou(event)">
+  <input type="email" placeholder="Your email" required />
+  <button type="submit">SUBSCRIBE</button>
+</form>
+  </div>
+
+  <div class="footer-bottom">
+    <p>NGN ₦ ▼</p>
+
+  </div>
+</footer>
+  </footer>
+  
+  <footer>
+    <p>&copy; 2025 Daraè. All rights reserved.</p>
+  </footer>
+  <script>
+       function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("show");
+    }
+    function showThankYou(event) {
+    event.preventDefault();
+    alert("Thank you for subscribing 😊💓");
+    event.target.reset(); // Optional: clears the form after submit
+  }
+  </script>
+</body>
+</html>
+
+   

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop - Daraè</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+    }
+
+    .header {
+      background: #111;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .products-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .products-section h2 {
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    .product-grid {
+    display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .product {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .product h3 {
+      margin: 15px 0 10px;
+    }
+
+    .product p {
+      color: #444;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .product button {
+      background: #111;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    
+  </style>
+</head>
+<body>
+
+   <header>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+   <div class="luxury-logo">Daraé Place</div>
+    <div class="icons">
+
+      <span class="cart">🛍️<span class="count">0</span></span>
+
+      <span class="search">🔍</span>
+
+    </div>
+
+  </header>
+
+<nav id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="category.html">Category</a>
+  </nav>
+  </header>
+
+  <section class="products-section">
+    <h2>LEATHER SLIPPERS</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="shoe1.jpg" alt="Bag">
+        <h3>Classic Leather</h3>
+       
+     <button id="order-btn">Order</button>
+      </div>
+
+      <div class="product">
+        <img src="shoe2.jpg" alt="Shoes">
+        <h3>Criss-Cross Leather Slippers</h3>
+      
+       <button id="order-btn">Order</button>
+        </div>
+      <div class="product">
+        <img src="shoe3.jpg" alt="Bag">
+        <h3>Simple Flat Slippers</h3>
+        
+       <button id="order-btn">Order</button>
+      </div>
+
+      <div class="product">
+        <img src="shoe4.jpg" alt="Shoes">
+        <h3>Chunky Sole</h3>
+    
+       <button id="order-btn">Order</button>
+      </div>
+      
+      <div class="product">
+        <img src="shoe5.jpg" alt="Shoes">
+        <h3>Italian Leather Slippers</h3>
+        
+       <button id="order-btn">Order</button>
+      </div>
+      
+      <div class="product">
+        <img src="shoe6.jpg" alt="Shoes">
+        <h3>Handcrafted Hausa Leather Flats</h3>
+        
+       <button id="order-btn">Order</button>
+      </div>    
+      
+      <div class="product">
+        <img src="shoe7.jpg" alt="Shoes">
+        <h3>Simple Strapped Flats</h3>
+       
+       <button id="order-btn">Order</button>
+      </div>
+      
+      <div class="product">
+        <img src="shoe8.jpg" alt="Shoes">
+        <h3>Heeled Sandals</h3>
+       
+       <button id="order-btn">Order</button>
+      </div>
+      
+      <div class="product">
+        <img src="shoe9.jpg" alt="Shoes">
+        <h3>Leather Slippers</h3>
+        
+       <button id="order-btn">Order</button>
+      </div>
+      
+      <div class="product">
+        <img src="shoe10.jpg" alt="Shoes">
+        <h3>Half Shoe</h3>
+        
+       <button id="order-btn">Order</button>
+      </div>
+      
+      <div class="product">
+        <img src="shoe11.jpg" alt="Shoes">
+        <h3>Classic Sneakers</h3>
+       
+       <button id="order-btn">Order</button>
+      </div>
+      
+      <div class="product">
+        <img src="shoe12.jpg" alt="Shoes">
+        <h3>Ciudad Bonita Calzado </h3>
+        
+       <button id="order-btn">Order</button>
+      </div>
+      
+      <div class="product">
+        <img src="shoe13.jpg" alt="Shoes">
+        <h3>Moccasins</h3>
+       
+       <button id="order-btn">Order</button>
+      </div>
+      
+      <div class="product">
+        <img src="shoe14.jpg" alt="Shoes">
+        <h3>Flat Top</h3>
+       
+       <button id="order-btn">Order</button>
+      </div>
+      
+      <div class="product">
+        <img src="shoe15.jpg" alt="Shoes">
+        <h3>Women Square Toe Flats Sandals</h3>
+       
+       <button id="order-btn">Order</button>
+      </div>
+      
+      <div class="product">
+        <img src="shoe16.jpg" alt="Shoes">
+        <h3>Sandals</h3>
+       
+       <button id="order-btn">Order</button>
+      </div>
+      
+    
+    </div>         
+  </section>
+
+<!-- Newsletter Section -->
+<section class="newsletter">
+  <h2>JOIN OUR TRIBE</h2>
+  <p>Subscribe to get updates on new products, sales and promotions directly to your inbox</p>
+  <form onsubmit="showThankYou(event)">
+  <input type="email" placeholder="Your email" required />
+  <button type="submit">SUBSCRIBE</button>
+</form>
+</section>
+
+<!-- Description Section -->
+<section class="about">
+  <h2><strong>Daraé Place – Your One-Stop Online Fashion Destination for Women and Men</strong></h2>
+  <p>
+    Step into the world of <strong>Daraé Place</strong>, where luxury meets creativity in every thread and texture. 
+    We are your ultimate online destination for curated fashion that blends elegance, comfort, and individuality. 
+    From intricately handcrafted <strong>crochet garments</strong> to <strong>premium leather slippers</strong> 
+    that radiate timeless sophistication, each piece is thoughtfully made to elevate your personal style.
+  </p>
+  <p>
+    Whether you're dressing up for a statement look or embracing effortless everyday chic, 
+    <strong>Daraé Place</strong> offers something for every moment. Our collections for 
+    <strong>women and men</strong> are a celebration of craftsmanship, culture, and modern flair 
+    designed to make you feel confident, bold, and beautifully unique. Experience fashion redefined with the luxury of <strong>Daraé</strong>.
+  </p>
+</section>
+
+  <h3>Timeless Crochet Wear</h3>
+<section class="timeless-crochet">
+
+  <p>
+   <strong>Indulge in the artistry of Timeless Crochet Wear, </strong>where every stitch tells a story of craftsmanship, care, and heritage. At Daraé Place, our crochet pieces are more than fashion they are a statement of effortless beauty and sophistication. Each garment is carefully handcrafted to ensure not only lasting quality but also a breathable, lightweight feel perfect for any season. From breezy tops to elegant dresses, our crochet collection blends vintage charm with modern silhouettes, offering you pieces that remain stylish year after year. Whether you're dressing up for a relaxed weekend or adding texture to your everyday look, Timeless Crochet Wear brings warmth, uniqueness, and elegance to your wardrobe crafted to stand out and designed to endure.
+  </p>
+</section>
+
+<section class="leather-slippers">
+  <h3><strong>Premium Leather Slippers</strong></h3>
+  <p>
+    Step into unmatched comfort and elegance with our <strong>Premium Leather Slippers</strong> collection at Daraé Place. Crafted from the finest quality leather, each slipper offers a perfect blend of durability, softness, and style. Designed for those who appreciate sophistication in everyday wear, our slippers provide superior support while exuding a timeless charm. Whether you're at home or stepping out, these slippers elevate your look with their sleek design and luxurious feel. Meticulously handcrafted to deliver both function and fashion, they are the ultimate indulgence for your feet—where comfort meets classic refinement.
+  </p>
+</section>
+
+  <footer>
+      
+<footer class="site-footer">
+  <div class="footer-social">
+    <p>FOLLOW </p>
+    <a href="#"><img src="twitter-icon.png" alt="Twitter" /></a>
+    <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
+  </div>
+
+  <div class="footer-info">
+    <h4>INFO</h4>
+    <ul>
+      <li><a href="all.html">Ready To Wear</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="about.html">About Us</a></li>
+    
+      <li><a href="privacy.html">Privacy Policy</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-subscribe">
+    <h4>STAY UPDATED!</h4>
+    <p>Subscribe to get promotions, new products and sales updates directly to your inbox.</p>
+  <form onsubmit="showThankYou(event)">
+  <input type="email" placeholder="Your email" required />
+  <button type="submit">SUBSCRIBE</button>
+</form>
+  </div>
+
+  <div class="footer-bottom">
+    <p>NGN ₦ ▼</p>
+   
+  </div>
+</footer>
+
+    <p>&copy; 2025 Daraè Place. All rights reserved.</p>
+  </footer>
+
+
+  <script>
+    function addToCart(name, price) {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      cart.push({ name, price });
+      localStorage.setItem("cart", JSON.stringify(cart));
+      alert(name + " has been added to your cart.");
+    }
+    document.addEventListener("DOMContentLoaded", () => {
+      const orderBtn = document.getElementById('order-btn');
+      orderBtn.addEventListener('click', () => {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        if (cart.length === 0) {
+          alert('Your cart is empty!');
+          return;
+        }
+        const orderDetails = cart.map(item => `item.name - ₦{item.price.toFixed(2)}`).join(', ');
+        const message = `Hello Daraé place, I will like to place an order`;
+        const phone = "2349035128112";
+        const encodedMsg = encodeURIComponent(message);
+        window.location.href = `https://wa.me/2349035128112?text=${encodedMsg}`;
+      });
+    });
+     function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("show");
+    }
+    function toggleZoom(img) {
+      const modal = document.getElementById('zoom-modal');
+      const zoomImg = document.getElementById('zoomed-image');
+      zoomImg.src = img.src;
+      modal.style.display = 'flex';
+    }
+    function showThankYou(event) {
+    event.preventDefault();
+    alert("Thank you for subscribing 😊💓");
+    event.target.reset(); // Optional: clears the form after submit
+  }
+  
+  </script>
+
+</body>
+  </html>
+         

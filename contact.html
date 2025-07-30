@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    .contact-container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      background: #fafafa;
+    }
+    .contact-container h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .contact-item {
+      margin-bottom: 20px;
+    }
+    .contact-item i {
+      margin-right: 8px;
+    }
+    .form-section {
+      margin-top: 30px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #000;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+     footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body> <header>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+     <div class="luxury-logo">Daraé Place</div>
+    <div class="icons">
+
+      <span class="cart">🛍️<span class="count">0</span></span>
+
+      <span class="search">🔍</span>
+
+    </div>
+
+  </header>
+
+<nav id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="category.html">Category</a>
+  </nav>
+  </header>
+<div class="contact-container">
+  <h2>Contact Us</h2>
+  <div class="contact-item">
+      <strong>📍 Address</strong><br>
+    30 Odebe St Rumu_Oparala, Port Harcourt, 500102, Rivers, Nigeria 
+  </div>
+  <div class="contact-item">
+    <strong>📞 Phone</strong><br>
+  +234 (903) 512 8112
+  </div>
+  <div class="contact-item">
+    <strong>✉️ Email</strong><br>
+    contact adamstamara213@gmail.com
+  </div>
+
+  <div class="form-section">
+    <h3>Tell Us Your Message</h3>
+     <form onsubmit="showSuccessMessage(event)">
+      <label>Your Name *</label>
+      <input type="text" required>
+      <label>Your Email *</label>
+      <input type="email" required>
+      <label>Your Message *</label>
+      <textarea rows="5" required></textarea>
+      <button type="submit">Send </button>
+    </form>
+  </div>
+</div>
+<footer class="site-footer">
+  <div class="footer-social">
+    <p>FOLLOW </p>
+    <a href="#"><img src="twitter-icon.png" alt="Twitter" /></a>
+    <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
+  </div>
+
+  <div class="footer-info">
+    <h4>INFO</h4>
+    <ul>
+      <li><a href="all.html">Ready To Wear</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="about.html">About Us</a></li>
+    
+      <li><a href="privacy.html">Privacy Policy</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-subscribe">
+    <h4>STAY UPDATED!</h4>
+    <p>Subscribe to get promotions, new products and sales updates directly to your inbox.</p>
+   <form onsubmit="showThankYou(event)">
+  <input type="email" placeholder="Your email" required />
+  <button type="submit">SUBSCRIBE</button>
+</form>
+  </div>
+
+  <div class="footer-bottom">
+    <p>NGN ₦ ▼</p>
+   <p>&copy; 2025 Daraè Place. All rights reserved.</p>
+  </div>
+</footer>
+
+    <script >
+         function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("show");
+    }
+    function showThankYou(event) {
+    event.preventDefault();
+    alert("Thank you for subscribing 😊💓");
+    event.target.reset(); // Optional: clears the form after submit
+  }
+     function showSuccessMessage(event) {
+    event.preventDefault(); // Prevent form from submitting/reloading page
+    alert("Your message was sent successfully, we'll get back to you soon!");
+    event.target.reset(); // Optional: clears the form after submit
+  }
+    </script>
+  </footer>
+</body>
+</html>
